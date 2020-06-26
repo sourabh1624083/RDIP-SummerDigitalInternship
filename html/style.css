@@ -1,0 +1,184 @@
+.home{
+    font-family: serif;
+    font-style: italic;
+    
+    color:red;
+
+}
+
+.home-parent{
+    background-image: url('photography-of-fall-trees-1591447.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+    margin: 25px 25px;
+    padding: 25 pxpx 25px;
+    
+}
+
+#idhide{
+    display: none;
+}
+
+.home1-parent{
+    background-image: url('computer.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+    margin: 25px 25px;
+    padding: 25 pxpx 25px;
+    
+}
+
+
+#home-header{
+    /* /* display: inline-block; */
+    /* position: absolute;  */
+    background-color: chartreuse;
+    color: chocolate;
+
+    font-size: 24px;
+    text-align: center;
+    font-family: serif;
+    font-style: italic;
+    margin: 20px;
+    padding: 20px;
+}
+
+.home1header{
+    background-color: darkred;
+    color: darksalmon;
+    text-align: center;
+    font-size: 50px;
+    display: inline;
+    box-sizing: border-box;
+    margin: 20px;
+    padding: 20px;
+
+}
+
+
+.regtitle{
+    background-color: chartreuse;
+    color: chocolate;
+    font-size: 24px;
+    text-align: center;
+    font-family: serif;
+    font-style: italic;
+    margin: 20px;
+    padding: 20px;
+
+}
+
+.tdmarks{
+    text-align: right;
+}
+
+.tdsubject{
+    text-align: left;
+}
+
+.text{
+    color: rgb(225, 65, 65);
+    font-size: 24px;
+    text-align: center;
+    font-family: serif;
+    font-style: italic;
+    margin: 20px;
+    padding: 20px;
+
+}
+.form-group input {
+    text-align: center;
+    display: block;
+    width: 500px;
+    padding: 10px;
+    border: 2px solid black;
+    margin: 11px auto;
+    font-size: 25px;
+    border-radius: 8px;
+}
+
+.radio-button{
+    text-align: center;
+    display: block;
+    width: 500px;
+    padding: 10px;
+    border: 2px solid black;
+    margin: 11px auto;
+    font-size: 25px;
+    border-radius: 8px;
+}
+
+.table-element{
+    text-align: center;
+    display: block;
+    width: 500px;
+    padding: 10px;
+    margin: 11px auto;
+    font-size: 25px;
+}
+
+#per-details{
+
+    text-align: center;
+    display: block;
+    width: 500px;
+    padding: 10px;
+    margin: 11px auto;
+    font-size: 25px;
+    text-align: left;
+}
+
+
+.textarea{
+    text-align: center;
+    display: block;
+    width: 500px;
+    padding: 10px;
+    border: 2px solid black;
+    margin: 11px auto;
+    font-size: 25px;
+    border-radius: 8px;
+
+}
+.button{
+    padding: 15px 15px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color:chocolate;
+    background-color: chartreuse;
+    border: none;
+    border-radius: 15px;
+}
+
+.button:hover {background-color: darkred}
+
+.button:active {
+  background-color: blue;
+}
+
+
+.button-parent{
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.checkbox-parent{
+    text-align: center;
+}
+
+.checkbox-subparent{
+    text-align: center;
+}
+
+.checkbox-inline{
+    margin: 10px;
+    padding: 10px;
+}
+

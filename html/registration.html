@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+
+
+
+    <script>
+        function imp() {
+            var form = new FormData(document.getElementById("form"));
+            var inputvalue = form.get("input_type_name");
+            document.write("Name ::", inputvalue);
+            document.write("<br>");
+
+            var phone = form.get("input_type_phone_no");
+            document.write("Contact Number ::", phone, "<br>");
+            var degree = form.get("input_type_Bachelor");
+            document.write("Interest ::");
+            if (degree == "on")
+                document.write("Bachelor<br>");
+            else if (form.get("input_type_Masters") != "on")
+                document.write("No Degree Prefrences <br>");
+            else
+                document.write("Masters<br>");
+
+            var text = form.get("input_type_Mytext");
+            document.write("About :: ", text, "<br>");
+
+            document.write("Subject ::")
+            var Subject = form.get("Subject1");
+            if (Subject != null)
+                document.write("DSA <br>");
+            var Subject = form.get("Subject2");
+            if (Subject != null)
+                document.write("Operating System <br>");
+
+            var Subject = form.get("Subject3");
+            if (Subject != null)
+                document.write("Computer Graphics <br>");
+
+        }
+    </script>
+
+
+
+
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <div class="reg">
+        <h2 class="regtitle">
+            Registration Form
+        </h2>
+        <form id="form">
+            <div class="form-group input">
+                <input type="text" name="input_type_name" id="name" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group input">
+                <input type="number" name="input_type_phone_no" placeholder="Enter Your Contact Number">
+            </div>
+            <div class="radio-button">
+                Interest:Bachelor<input type="radio" name="input_type_Bachelor">Masters<input type="radio"
+                    name="input_type_Masters">
+            </div>
+            <div class="textarea">
+                <textarea placeholder="Write About Yourself" cols="61" rows="4"></textarea>
+            </div>
+
+            <div class="checkbox-parent">
+                <span class="checkbox-inline">Subjects :: </span>
+                <label class="checkbox-inline">
+                    <input type="checkbox" value="">DSA
+                </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox" value="">Operating System
+                </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox" value="">Computer Graphics
+                </label>
+
+            </div>
+            <div class="button-parent">
+                <button class="button" onclick="imp()"> Submit </button>
+                <!-- <input type="button" value="Submit" onClick="imp()"> -->
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
