@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home Page</title>
+    <style>
+        #header1 {
+            margin: 0px 5px;
+            padding: 20px;
+        }
+
+        .rdip {
+            float: right;
+            font-size: 50px;
+            align-self: auto;
+        }
+
+        .rdip:hover {
+            text-decoration: none;
+            color: green;
+        }
+
+        .iiit {
+            float: left;
+        }
+
+        .iiit:hover {
+            background-color: green;
+        }
+
+        .navbar {
+            background-color: black;
+            position: absolute;
+            top: 120px;
+
+            margin: 20px;
+            padding: 0px;
+            height: 50px;
+            width: 95%;
+
+        }
+
+        .navbar ul {
+
+            overflow: auto;
+        }
+
+        .navbar li {
+
+            list-style: none;
+            float: left;
+            margin: 0px 5px;
+            padding: 0px 5px 5px 0px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        mydata table,
+        th,
+        tr,
+        td {
+            border: 2px solid black;
+        }
+
+        .mydata {
+            position: absolute;
+            top: 250px;
+            margin: 5px 20px 5px 20px;
+            padding: 10px 10px;
+        }
+
+        .right {
+            position: absolute;
+            top: 300px;
+            right: 100px;
+        }
+        .footer{
+            position: absolute;
+            top: 460px;
+            margin: 5px 20px 5px 20px;
+            padding: 10px 10px;
+            font-size: 16px;
+            
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2 id="header1">
+        <a class="iiit" href="https://www.iiit.ac.in/" target="_blank"><img src="iiith.png" alt="" height="100px"
+                width="100px"> </a>
+        <a class="rdip" href="https://serc.iiit.ac.in/rdip" target="_blank">RDIP</a>
+    </h2>
+    <nav class="navbar">
+        <ul>
+            <li>
+                <a href="homepage.html">Home</a>
+            </li>
+            <li>
+                <a href="registration.html" target="_blank">Registration Form</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="mydata">
+        <h3>My Details</h3>
+        <table style="width:50%">
+            <tr>
+                <th>Name</th>
+                <th>Sourabh Yadav</th>
+
+            </tr>
+            <tr>
+                <th>Collage</th>
+                <th>MNIT,Jaipur</th>
+
+            </tr>
+            <tr>
+                <th>Reason </th>
+                <th>To learn something and have better opportunity for myself for Job</th>
+
+            </tr>
+
+
+        </table>
+
+    </div>
+    <img src="tom.png" height="150px" width="150px" class="right">
+    <footer class="footer">
+        <p>
+            RDIP is Remote Digital Internship Program to help Students in Learning/Improving HTML,CSS,Javascript.
+        </p>
+        <p>
+            And the best part of this in my opinion is <span style="font-style: oblique; font-size: 22px;">Learning by Doing</span>.
+        </p>
+    </footer>
+
+
+
+</body>
+
+</html>
