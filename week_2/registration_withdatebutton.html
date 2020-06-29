@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration Form</title>
+    <style>
+        #header1 {
+            margin: 0px 5px;
+            padding: 20px;
+        }
+
+        .rdip {
+            float: right;
+            font-size: 50px;
+            align-self: auto;
+        }
+
+        .rdip:hover {
+            text-decoration: none;
+            color: green;
+        }
+
+        .iiit {
+            float: left;
+        }
+
+        .iiit:hover {
+            background-color: green;
+        }
+
+        .navbar {
+            background-color: black;
+            position: absolute;
+            top: 120px;
+
+            margin: 20px;
+            padding: 0px;
+            height: 50px;
+            width: 95%;
+
+        }
+
+        .navbar ul {
+
+            overflow: auto;
+        }
+
+        .navbar li {
+
+            list-style: none;
+            float: left;
+            margin: 0px 5px;
+            padding: 0px 5px 5px 0px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+
+        }
+
+        .form {
+            position: absolute;
+            top: 200px;
+            margin: 5px 20px 5px 20px;
+            text-align: left;
+        }
+
+        .data {
+            padding: 5px;
+        }
+
+        .text {
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+
+        .btn {
+            border: white;
+            border-radius: 3px;
+            margin: 5px 5px;
+            padding: 20px 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2 id="header1">
+        <a class="iiit" href="https://www.iiit.ac.in/" target="_blank"><img src="iiith.png" alt="" height="100px"
+                width="100px"> </a>
+        <a class="rdip" href="https://serc.iiit.ac.in/rdip" target="_blank">RDIP</a>
+    </h2>
+    <nav class="navbar">
+        <ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">Registration Form</a>
+            </li>
+        </ul>
+    </nav>
+    <form class="form" method="get">
+
+        <div class="data">
+            Name: <span style="padding-left: 120px;"></span> <input class="text" type="text" name="NAME" id="name">
+        </div>
+        <div class="data">
+            E Mail:<span style="padding-left: 115px;"></span> <input class="text" type="text">
+        </div>
+        <div class="data">
+            Phone No.:<span style="padding-left: 90px;"></span> <input class="text" type="text" name="PhoneNumber">
+        </div>
+        <div class="data">
+            Gender :<span style="padding-left: 100px;"></span> <input type="radio">Male<input type="radio">Female<input
+                type="radio">Other
+        </div>
+        <div class="data">
+            Reason For RDIP : <span style="padding-left: 33px;"></span> <input type="radio">HTML<input
+                type="radio">CSS<input type="radio">Java Script
+        </div>
+        <div class="data">
+            Collage:<span style="padding-left: 105px;"></span> <input class="text" type="text">
+        </div>
+
+
+        <div class="data">
+            <input type="checkbox" id="Subject1" name="Subject1" value="DSA"> <span style="padding-left: 50px;"></span>
+            I hereby declare that details given by me are true
+
+        </div>
+
+        <div class="btn">
+                <button type="submit">Submit</button><span style="padding-left: 40px;"></span>
+                <button type="reset">Reset</button><span style="padding-left: 40px;"></span>
+                <button onclick="this.innerHTML =alert(Date())">The time is?</button>
+        </div>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>If Else </title>
+</head>
+
+<body>
+    <h2>
+        If Else 
+    </h2>
+    <form>
+        Enter a Number : <input type="number" id="num">
+
+        <button type="submit" onclick="check()">
+            Check >=10 or <= 100 </button> <br>
+        
+
+                <script>
+                    function check() {
+
+                        var num = document.getElementById('num').value;
+                        //document.write(typeof'num1');
+                        var num1 = parseInt(num, 10);
+                        //document.write(typeof'num1');
+                        if (num1 <= 100 && num1 >= 10)
+                            alert("Ok number is <=10 and>=100 <br>");
+                        else
+                            alert("NOOOO!!!! Number is not between <=10 and>=100 <br>");
+
+                    }
+
+                </script>
+    </form>
+</body>
+
+</html>

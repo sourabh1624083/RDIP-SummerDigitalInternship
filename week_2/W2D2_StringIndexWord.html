@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>String</title>
+
+</head>
+
+<body>
+
+    <p id="para1">
+        HTML stands for Hyper Text Markup Language.It is standard markup language for creating Web pages.
+        It describes the structure of a Web page. HTML consists of a series of elements.
+        HTML elements tell the browser how to display the content
+    </p>
+    <p>
+        Text at 5th,7th,10th position : 
+    </p>
+    <p id="para">
+       </p>
+    <script>
+            var str = document.getElementById('para1').innerHTML;
+            var res = str.slice(31,35);
+            res = res+" "+str.slice(43,51)+" "+str.slice(58,66);
+            document.getElementById("para").innerHTML = res;
+            // if(str[i]==" ")
+            // {
+            //     count+=1;
+            // }
+            // if(count==4)
+            // {
+            //     document.write(str[i]);
+
+            //     if(str[i]==" ")
+            //     break;
+            // }
+            // i++;
+            //                document.write(arr);
+        
+
+
+    </script>
+</body>
+
+</html>

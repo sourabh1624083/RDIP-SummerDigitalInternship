@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fibonacci Series</title>
+</head>
+
+<body>
+    Enter a Number : <input type="number" id="num">
+    <button type="submit" onclick="f_s()">Fibonacci Series till number </button>
+    <script>
+
+        function f_s() {
+            var num = document.getElementById('num').value;
+            var n = parseInt(num, 10);
+            var var1 = 0 ;
+            var var2 = 1;
+            var arr = [0,1];
+            //document.write(n,typeof"n");
+            document.write("Here is the fibonacci series : ");
+            // document.write("", var1, ",");
+            // document.write("", var2, ",");
+            var i = 0, sum = 0;
+            var var3 ;
+            for (i = 2; i < n; i++) {
+                var3 = var1+var2;
+                //document.write(" ",sum," ");
+                arr.push(var3);
+                var1 = var2;
+                var2 = var3;
+            }
+            document.write(arr);
+        }
+    </script>
+</body>
+
+</html>
