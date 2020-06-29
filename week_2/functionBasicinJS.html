@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Function Basic</title>
+
+
+</head>
+
+<body>
+    <h3>
+        Basic of Function In Java Script
+    </h3>
+
+    <p id="para">
+    </p>
+    <script>
+        function mul(a, b) {
+            b = (typeof b != 'undefined') ? b : 1;
+
+            return a * b;
+        }
+        document.write("Mul of 5*4 :: ", mul(5, 4), "<br>");
+        document.write("Mul of 5*1 :: ", mul(5),"<br>");
+
+        function toCelsius(f) {
+            return (5 / 9) * (f - 32);
+        }
+        document.getElementById("para").innerHTML = document.write("F(100) to degreeCelsius :: <br>", toCelsius(100));
+    </script>
+
+</body>
+
+</html>

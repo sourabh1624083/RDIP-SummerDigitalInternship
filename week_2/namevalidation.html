@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration Form</title>
+    <style>
+        .form {
+            position: absolute;
+            margin: 5px 20px 5px 20px;
+            text-align: left;
+        }
+
+        .data {
+            padding: 5px;
+        }
+
+        .text {
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+
+        .btn {
+            border: white;
+            border-radius: 3px;
+            margin: 5px 5px;
+            padding: 20px 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form class="form" action="#" onsubmit="validatename()">
+        <div class="data">
+            NAME VALIDATION
+
+        </div>
+        <div class="data">
+            Name: <span style="padding-left: 120px;"></span> <input class="text" type="text" name="NAME" id="name">
+            <span id="username" class="text-danger font-weight-bold"></span>
+        </div>
+        <div class="data">
+            E Mail:<span style="padding-left: 115px;"></span> <input class="text" type="text">
+
+
+            <div class="btn">
+                <button type="submit">Submit</button>
+            </div>
+            <script>
+                function validatename() {
+                    var name = document.getElementById('name').value;
+                    //document.write(name);
+                    if(name=="")
+                    {
+                        alert("Please Enter Your Name ");
+                      return false;
+                    }
+                    var us=/[0-9]/g;
+                    var result = name.match(us);
+                    if(result != null){
+                        alert("Use Only Alphabets In name");
+                     return false;
+                  }
+
+                }
+            </script>
+    </form>
+</body>
+
+</html>

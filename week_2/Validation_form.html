@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration Form</title>
+    <style>
+        .form {
+            position: absolute;
+            margin: 5px 20px 5px 20px;
+            text-align: left;
+        }
+
+        .data {
+            padding: 5px;
+        }
+
+        .text {
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+
+        .btn {
+            border: white;
+            border-radius: 3px;
+            margin: 5px 5px;
+            padding: 20px 20px;
+        }
+
+
+
+        .checkbox-inline {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form class="form" action="#" onsubmit="validate()">
+        <div class="data">
+            VALIDATION NAME,Phone Number,Subject
+
+        </div>
+        <div class="data">
+            Name: <span style="padding-left: 120px;"></span> <input class="text" type="text" name="NAME" id="name">
+            <span id="username" class="text-danger font-weight-bold"></span>
+        </div>
+        <div class="data">
+            Phone Number:<span style="padding-left: 61px;"></span> <input class="text" type="text" name="phoneno"
+                id="phoneno">
+            <span id="userphoneno" class="text-danger font-weight-bold"></span>
+
+            <div class="checkbox-parent">
+                <span class="checkbox-inline">Subjects :: </span>
+                <label class="checkbox-inline">
+                    <input type="checkbox" name="DSA" id="OS">DSA
+                </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox" name="OS" id="OS">Operating System
+                </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox" name="CG" id="CG">Computer Graphics
+                </label>
+
+            </div>
+
+            <div class="btn">
+                <button type="submit" id="button">Submit</button>
+            </div>
+            <script>
+                function validate() {
+                    var name = document.getElementById('name').value;
+                    //document.write(name);
+                    if (name == "") {
+                        alert("Name can't be blank");
+                        return false;
+                    }
+                    var us = /[0-9]/g;
+                    var result = name.match(us);
+                    if (result != null) {
+                        alert("Use Only Alphabets In name");
+                        return false;
+                    }
+                    var phoneno = document.getElementById('phoneno').value;
+                    //document.write(name);
+                    if (phoneno == "") {
+                        alert(" Phone Number can't be blank");
+                        return false;
+                    }
+                    var p = /[^0-9]/g;
+                    var result = phoneno.match(p);
+                    if (result != null) {
+                        alert("Use Only Integers In PHONE NUMBER");
+                        return false;
+                    }
+                    var sub1 = document.getElementById('DSA');
+                    var sub2 = document.getElementById('OS');
+                    var sub3 = document.getElementById('CG');
+                    //document.write(sub1);
+                    if ((sub1 && sub2 && sub3 != null)) {
+                        alert("Please Check Minimum One Subject");
+                        return false;
+                    }
+
+                    // document.getElementById("button").disabled = false;
+
+                    document.write(name);
+                    document.write("<br>");
+                    document.write(phoneno);
+
+                    document.write("<br>");
+                    document.write("Subjects :: <br>");
+                    if(sub1 != null)
+                    {
+                        document.write("DSA");
+                        document.write("<br>");
+                    }
+
+
+                    if(sub2 != null)
+                    {
+                        document.write("OS");
+                    
+                        document.write("<br>");}
+                    if(sub3 != null)
+                    {
+                        document.write("CG");
+                    
+                        document.write("<br>");
+                    }
+                }
+            </script>
+
+    </form>
+</body>
+
+</html>
