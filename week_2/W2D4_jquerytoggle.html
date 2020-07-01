@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("#gfg").toggle();
+            });
+        });
+        $(document).ready(function () {
+            $("button").click(function () {
+                $.get("demo.txt", function (data, status) {
+                    alert("Data: " + data + "\nStatus: " + status);
+                });
+            });
+        });
+        // $(document).ready(function () {
+        //     $("button").click(function () {
+        //         $.post("demo_n.txt",
+        //             {
+        //                 name: "Donald Duck",
+        //                 city: "Duckburg"
+        //             },
+        //             function (data, status) {
+        //                 alert("Data: " + data + "\nStatus: " + status);
+        //             });
+        //     });
+        // });
+    </script>
+    <style>
+        #gfg {
+            color: green;
+            border: 5px solid black;
+            width: 200px;
+            text-align: center;
+        }
+    </style>
+    </style>
+</head>
+
+<body>
+
+    <div id="gfg">Click the below button to hide and show the text</div>
+
+    <button>Click to hide() and show() the above div</button>
+
+</body>
+
+</html>

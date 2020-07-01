@@ -1,0 +1,3 @@
+Hello There!!!!
+
+Some Data using get method in ajax
